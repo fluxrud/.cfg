@@ -1,0 +1,6 @@
+[core]
+    editor = /usr/bin/vim
+
+[user]
+    email = andreas.f.d@outlook.com
+    name = fluxrud
