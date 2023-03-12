@@ -19,9 +19,6 @@ map <F2> :NERDTreeToggle<CR>
 
 " ALE configurtion
 
-" ALEFix bind
-map <F3> :ALEFix<CR>
-
 " go to next error keybind
 nmap <silent> <C-e> <Plug>(ale_next_wrap)
 
@@ -38,9 +35,10 @@ let g:ale_fix_on_save = 1
 let g:ale_sign_error = '●'
 let g:ale_sign_warning = '.'
 
-" C/C++
+" C/C++, dependant on astyle, apt: sudo apt-get install -y astyle
 let g:ale_fixers = {
 \	'c':['astyle'],
+\	'cpp':['astyle'],
 \}
 
 
