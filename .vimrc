@@ -1,3 +1,5 @@
 set rnu nu
-set ignorecase
+set smartcase
 set autoindent
+set hlsearch
+set title
