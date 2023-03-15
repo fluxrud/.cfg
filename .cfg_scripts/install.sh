@@ -2,7 +2,7 @@
 
 git clone --bare git@github.com:fluxrud/.cfg.git $HOME/.cfg
 function config {
-   /usr/bin/git git@github.com:fluxrud/.cfg.git=$HOME/.cfg/ --work-tree=$HOME $@
+   /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 mkdir -p .config-backup
 cd $HOME
