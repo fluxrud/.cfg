@@ -1,5 +1,9 @@
 " .vimrc
 
+" plugins to add
+" youcompleteme
+" 
+
 set rnu nu
 set smartcase
 
