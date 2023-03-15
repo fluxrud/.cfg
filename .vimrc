@@ -36,7 +36,7 @@ let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 
 " lint symbols
-let g:ale_sign_error = '●'
+let g:ale_sign_error = '*'
 let g:ale_sign_warning = '.'
 
 " C/C++, dependant on astyle, apt: sudo apt-get install -y astyle
