@@ -188,3 +188,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# set norwegian layout
+exec "setxkbmap -layout no"
