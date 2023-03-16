@@ -191,3 +191,66 @@ bar {
 
 # set norwegian layout
 exec "setxkbmap -layout no"
+
+
+########################################################################################################
+########################################################################################################
+########################################################################################################
+
+#if you want transparency on non-focused windows, ...
+#exec_always --no-startup-id picom --config ~/.config/picom/picom.sample.conf
+#exec_always --no-startup-id ~/.config/i3/scripts/mouse.sh
+#exec_always feh --bg-fill $HOME/Pictures/walls/gruv_black.png
+#exec_always xwallpaper --tile $HOME/Pictures/walls/gruvtile.png 
+#exec_always --no-startup-id i3-auto-layout
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh dark
+#exec_always --no-startup-id i3-auto-layout
+#exec_always --no-startup-id dunst -config $HOME/.config/dunst/base16-nord.dunstrc
+#note: my custom dunst configuration can be found here https://pastebin.com/P4i1N8ub curl it to $HOME/.config/dunst/base16-nord.dunstrc
+#exec_always --no-startup-id /usr/lib/kdeconnectd
+
+/* bindsym Mod4+Mod1+Shift+minus exec \ */
+/*   i3-msg "gaps outer current minus 5" && \ */
+/*   i3-msg "gaps inner current minus 5" */
+  
+/*   bindsym Mod4+Mod1+Shift+plus exec \ */
+/*   i3-msg "gaps outer current plus 5" && \ */
+  /* i3-msg "gaps inner current plus 5" */
+
+########################################################################################################
+###################### Theme ###########################################################################
+########################################################################################################
+
+set $base00 #101218
+set $base01 #1f222d
+set $base02 #252936
+set $base03 #5e81ac
+set $base04 #C0C5CE
+set $base05 #d1d4e0
+set $base06 #C9CCDB
+set $base07 #ffffff
+set $base08 #ee829f
+set $base09 #f99170
+set $base0A #ffefcc
+set $base0B #a5ffe1
+set $base0C #97e0ff
+set $base0D #97bbf7
+set $base0E #c0b7f9
+set $base0F #fcc09e
+#its neon blue #4666FF
+
+
+
+    ##START THEMING WM
+
+    # Window color settings
+    # class                 border  backgr. text    indicator
+    client.focused          #282828 #282828 #ffffff #282828
+    client.unfocused        #1d2021 #1d2021 #1d2021 #1d2021
+    client.focused_inactive #282828 #282828 #888888 #282828
+    client.placeholder      #282828 # #888888 #82828
+    client.urgent           #900000 #900000 #ffffff #900000
+
+    client.background       #242424
+
+    ##STOP THEMING WM
