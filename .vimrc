@@ -1,5 +1,7 @@
 " .vimrc
 
+syntax on
+
 " plugins to add
 " youcompleteme
 " 
