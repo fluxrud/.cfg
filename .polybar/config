@@ -17,7 +17,7 @@
 ;==========================================================
 
 [colors]
-background = #282A2E
+background = #00282A2E
 background-alt = #373B41
 foreground = #C5C8C6
 primary = #F0C674
@@ -28,7 +28,7 @@ disabled = #707880
 [bar/example]
 width = 100%
 height = 24pt
-radius = 6
+radius = 0
 
 ; dpi = 96
 
@@ -37,7 +37,7 @@ foreground = ${colors.foreground}
 
 line-size = 3pt
 
-border-size = 4pt
+border-size = 1pt
 border-color = #00000000
 
 padding-left = 0
@@ -148,11 +148,14 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 [module/wlan]
 inherit = network-base
 interface-type = wireless
-label-connected = %{F#F0C674}%ifname%%{F-} %essid% %local_ip%
+#label-connected = %{F#F0C674}%ifname%%{F-} %essid% %local_ip%
+label-connected = %local_ip%
+format-disconnected-foreground = ${colors.alert}
 
 [module/eth]
 inherit = network-base
 interface-type = wired
+format-disconnected = ""
 label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 
 [module/date]
