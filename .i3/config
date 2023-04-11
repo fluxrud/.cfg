@@ -15,9 +15,9 @@ bindsym $mod+Mod1+l exec --no-startup-id i3lock -c 000000 -e
 ##############################################################################################################
 
 
-exec_always --no-startup-id "gnome-keyring-daemon -s"
+#exec_always --no-startup-id "gnome-keyring-daemon -s"
 exec_always --no-startup-id "nm-applet"
-
+exec_always --no-startup-id "systemctl start pcscd.service"
 
 ##############################################################################################################
 #################                            Movement                                        #################
